@@ -1,0 +1,23 @@
+[package]
+name = "brotli-compressor"
+version = "1.0.0"
+edition = "2021"
+description = "High-performance Brotli compression library for HighPer Framework"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+brotli = "6.0"
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[profile.dev]
+opt-level = 1

@@ -1,0 +1,148 @@
+# Composer
+/vendor/
+composer.lock
+composer.phar
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.out
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
+
+# PHPUnit
+.phpunit.result.cache
+phpunit.xml
+/build/
+/tests/coverage/
+
+# PHPStan
+phpstan.neon
+.phpstan-cache/
+
+# Psalm
+psalm.xml
+.psalm/
+
+# Infection
+infection.log
+.infection.log
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+temp/
+
+# Cache directories
+.cache/
+cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Rust build artifacts
+/rust/target/
+/rust/Cargo.lock
+*.so
+*.dll
+*.dylib
+
+# FFI generated files
+*.h
+libcompression.*
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Test artifacts
+/tests/fixtures/temp/
+/tests/output/
+*.test
+
+# Performance test results
+benchmark-results.json
+performance-*.log
+
+# Documentation build
+/docs/build/
+/docs/_build/
+
+# Package files
+*.tar
+*.tar.gz
+*.zip
+*.rar
+
+# Local configuration
+config/local.php
+config/*.local.php
+
+# Memory dumps
+*.hprof
+heapdump
+
+# Node.js (if using for build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+/build/
+/dist/
+/out/
+
+# Rust specific
+**/*.rs.bk
+Cargo.lock
+
+# C/C++ specific
+*.o
+*.a
+*.obj
+*.exe
+
+# Python (if used for build scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.Python
+
+# Local development files
+scratch.php
+test.php
+debug.php
+local-*
