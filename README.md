@@ -285,6 +285,24 @@ $provider = new CompressionServiceProvider(null, $config);
 
 ## Framework Integration
 
+### HighPer Framework (Native Integration)
+
+```php
+// The compression library is automatically integrated into HighPer Framework
+// through the CompressionServiceProvider. No manual setup required.
+
+// Access compression manager in HighPer applications
+$container = $app->getContainer();
+$compressionManager = $container->get(CompressionManagerInterface::class);
+$compressionMiddleware = $container->get(CompressionMiddleware::class);
+
+// Available aliases:
+// - 'compression' → CompressionManagerInterface
+// - 'compression.manager' → CompressionManagerInterface  
+// - 'compression.middleware' → CompressionMiddleware
+// - 'compression.config' → ConfigurationInterface
+```
+
 ### Laravel
 
 ```php
